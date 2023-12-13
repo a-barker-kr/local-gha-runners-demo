@@ -7,5 +7,6 @@
                  start-page="nektos-act.md">
 
     <toc-element topic="nektos-act.md"/>
+    <toc-element topic="Getting-Started.md"/>
     <toc-element topic="Tutorial.md"/>
 </instance-profile>
