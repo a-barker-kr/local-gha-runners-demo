@@ -1,5 +1,6 @@
 <var name="tutorial-number" value="2"/>
-<var name="tutorial-yaml-file" value="tutorial-2.yml"></var>
+<var name="tutorial-yaml-file" value="tutorial-%tutorial-number%.yml"></var>
+<var name="act-command" value="act -W .github/workflows/%tutorial-yaml-file%"></var>
 
 # Tutorial 2: Creating a Workflow with Multiple Jobs
 

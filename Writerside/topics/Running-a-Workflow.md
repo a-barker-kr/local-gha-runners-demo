@@ -1,5 +1,6 @@
 <var name="tutorial-number" value="1"/>
-<var name="tutorial-yaml-file" value="tutorial-1.yml"></var>
+<var name="tutorial-yaml-file" value="tutorial-%tutorial-number%.yml"></var>
+<var name="act-command" value="act -W .github/workflows/%tutorial-yaml-file%"></var>
 
 # Tutorial 1: Running a Simple Bash Script
 
@@ -29,7 +30,7 @@ Ensure the <code>%tutorial-yaml-file%</code> is in the <code>.github/workflows</
 </step>
 <step>
 Run the workflow using Nektos/Act by executing the following command in your terminal:
-<code-block lang="bash">act -W .github/workflows/%tutorial-yaml-file%</code-block>
+<code-block lang="bash">%act-command%</code-block>
 </step>
 </procedure>
 </snippet>

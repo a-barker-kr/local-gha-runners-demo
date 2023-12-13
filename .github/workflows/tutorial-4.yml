@@ -1,0 +1,29 @@
+name: Advanced Features Workflow
+
+on: workflow_dispatch
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Placeholder Setup Step
+        run: echo "Setting up the environment..."
+
+  conditional-job:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && startsWith(github.ref, 'refs/heads/feature/')
+    needs: setup
+    steps:
+      - name: Conditional Execution
+        run: echo "Running on a feature branch via workflow_dispatch!"
+
+  final-job:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [setup, conditional-job]
+    steps:
+      - name: Final Step
+        run: echo "This runs regardless of previous job results."

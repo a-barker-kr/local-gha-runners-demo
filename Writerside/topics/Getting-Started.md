@@ -47,6 +47,8 @@ There are two ways in which you can download the open source code, either throug
 <br/>
 Download the [latest release](https://github.com/nektos/act/releases/latest) and add the path to your binary into your PATH.
 
+## Install The Required Docker Image
+
 ## Download Tutorial Repo
 In order to work through the tutorials, you will need to run the following clone:
 ```Bash

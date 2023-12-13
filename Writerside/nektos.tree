@@ -11,5 +11,7 @@
     <toc-element topic="Tutorials.md">
         <toc-element topic="Running-a-Workflow.md"/>
         <toc-element topic="Tutorial-2-Creating-a-Workflow-with-Multiple-Jobs.md"/>
+        <toc-element topic="Tutorial-3-Using-Environment-Variables-Secrets.md"/>
+        <toc-element topic="Tutorial-4-Incorporating-Docker-Containers.md"/>
     </toc-element>
 </instance-profile>
