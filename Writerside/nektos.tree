@@ -2,7 +2,7 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="n"
+<instance-profile id="nektos"
                  name="Nektos/Act For Local GitHub Actions"
                  start-page="nektos-act.md">
 
