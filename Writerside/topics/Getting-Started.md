@@ -48,6 +48,14 @@ There are two ways in which you can download the open source code, either throug
 Download the [latest release](https://github.com/nektos/act/releases/latest) and add the path to your binary into your PATH.
 
 ## Install The Required Docker Image
+> **Large Docker Image Size**
+>
+> Please note, this Docker image is almost 18GB. Please ensure you have enough space on your machine prior to trying to pull it down
+>
+{style="warning"}
+- Nektos/Act uses a Docker image to create an environment similar to GitHub Actions runners. To pull this image, run the following command in your terminal:
+    <code-block lang="bash">docker pull nektos/act-environments-ubuntu:18.04</code-block>
+- This command downloads the `nektos/act-environments-ubuntu:18.04` image, which is a common environment for GitHub Actions. You can replace 18.04 with another tag if a different version is required for your workflows.
 
 ## Download Tutorial Repo
 In order to work through the tutorials, you will need to run the following clone:
