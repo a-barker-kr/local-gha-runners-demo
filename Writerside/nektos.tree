@@ -8,5 +8,8 @@
 
     <toc-element topic="nektos-act.md"/>
     <toc-element topic="Getting-Started.md"/>
-    <toc-element topic="Tutorial.md"/>
+    <toc-element topic="Tutorials.md">
+        <toc-element topic="Running-a-Workflow.md"/>
+        <toc-element topic="Tutorial-2-Creating-a-Workflow-with-Multiple-Jobs.md"/>
+    </toc-element>
 </instance-profile>

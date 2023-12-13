@@ -9,7 +9,8 @@ Below are detailed outlines that contain the steps that you will need in order t
 {style="warning"}
 
 
-## Installation
+## Install Nektos/Act
+There are two ways in which you can download the open source code, either through a package manager or installing the binary manually.
 #### Install via Package Manager
 <tabs>
 <tab title="MacOS">
@@ -45,3 +46,9 @@ Below are detailed outlines that contain the steps that you will need in order t
 
 <br/>
 Download the [latest release](https://github.com/nektos/act/releases/latest) and add the path to your binary into your PATH.
+
+## Download Tutorial Repo
+In order to work through the tutorials, you will need to run the following clone:
+```Bash
+git clone https://github.com/a-barker-kr/local-gha-runners-demo.git
+```

@@ -10,4 +10,9 @@
         <description>Created after removal of "Getting Started" from Nektos/Act For Local GitHub Actions</description>
         <accepts>Getting-Started.html</accepts>
     </rule>
+    <rule id="52853d31">
+        <description>Created after removal of "Running a Workflow" from Nektos/Act For Local GitHub Actions
+        </description>
+        <accepts>Running-a-Workflow.html</accepts>
+    </rule>
 </rules>

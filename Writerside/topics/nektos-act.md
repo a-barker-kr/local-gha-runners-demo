@@ -1,6 +1,6 @@
 # About Nektos/Act
 
-Nektos/Act is an open-source tool that allows developers to run GitHub Actions locally on their own machines. This tool is designed to simulate the GitHub Actions environment, enabling developers to test their workflows and actions before pushing changes to their GitHub repository. It provides a cost-effective and efficient way of debugging and developing CI/CD pipelines without needing to use GitHub's own runners.
+[Nektos/Act](https://github.com/nektos/act) is an open-source tool that allows developers to run GitHub Actions locally on their own machines. This tool is designed to simulate the GitHub Actions environment, enabling developers to test their workflows and actions before pushing changes to their GitHub repository. It provides a cost-effective and efficient way of debugging and developing CI/CD pipelines without needing to use GitHub's own runners.
 
 ## Key Features
 

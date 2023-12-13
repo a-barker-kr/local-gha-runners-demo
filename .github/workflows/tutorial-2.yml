@@ -1,0 +1,36 @@
+name: Multi-Job Workflow
+
+on: workflow_dispatch
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      timestamp: ${{ steps.get-date.outputs.date }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Get Current Date
+        id: get-date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+
+  parallel-job-1:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Timestamp from Setup
+        run: echo "The date from setup is ${{ needs.setup.outputs.timestamp }}"
+
+  parallel-job-2:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Another Echo Step
+        run: echo "This runs in parallel with parallel-job-1"
+
+  final-job:
+    needs: [parallel-job-1, parallel-job-2]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Complete
+        run: echo "Both parallel jobs completed. Final job running."
